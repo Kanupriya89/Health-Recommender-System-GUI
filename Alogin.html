@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+</script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/css.css" media="screen" title="no title">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <title>Get Started</title>
+    <style>
+input[type=text], select {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+.text-left{
+  vertical-align: center ;
+  display: inline-block;
+}
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: black;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+
+input[type=checkbox], select {
+    width: -60%;
+    padding: 12px 20px;
+    margin: -10px 0;
+    display: inline-block;
+    
+}
+
+input[type=number], select {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type=submit] {
+    width: 25%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+</style>
+  </head>
+ <body background="med.jpg" class="indexpage">
+     <div id="flip"><font color="white"> Click to know more about us</div>
+<div id="panel"><font color="white">  This is the page where the patient can upload their disease details</div>
+    <div class="container-fluid pt-3">
+    
+     
+        <header class="header align-content-center">
+    <h1 class="header__title text-center">
+        Disease Predictor
+    </h1>
+    <p class="header__intro text-center">
+      
+    </p>
+</header>
+  
+     
+        </div>
+        
+        <!-- <div class="col-sm-6 col-md-4 col-md-border float-center">
+
+          <div class="card border-info text-center">
+            <div class="card-header">
+             Form
+            </div>
+            <div class="card-body float-center">
+              <!--<h4 class="text-center text-spacing">Sign-Up</h4> -->
+
+              <form class="form-signin" method="POST" action="http://192.168.43.24:5000/Aresponse">
+               <!-- <input type="text" class="form-control mb-2" placeholder="Gender" required autofocus> -->
+               <center>
+               <br>
+               <br>
+               <div class="text-left"><h3>Gender</h3>
+                <input type="radio" name="gender" value="male">Male<br> 
+                <input type="radio" name="gender" value="female">Female<br></div>
+              </center>
+                <center>
+                <!--
+                <input type="number" class="form-control mb-2" placeholder="Age" required ><br>
+                <input type="text" class="form-control mb-2" placeholder="Month" required >
+                -->
+               </center>
+               
+                 <center>
+                 <br>
+                 <br>
+                 <div class="text-left"><h3>Symptoms</h3><br>
+                  
+                 <h5>
+                  <input type="checkbox" name="1"> Constipation <br>
+                  <input type="checkbox" name="2"> Cough <br>
+                  <input type="checkbox" name="3"> Decreased Body Weight <br>
+                  <input type="checkbox" name="4"> Diarrohea <br>
+                  <input type="checkbox" name="5"> Fatigue <br>
+                  <input type="checkbox" name="6"> Fever <br>
+                  <input type="checkbox" name="7"> Hallucnation <br>
+                  <input type="checkbox" name="8"> Headache <br>
+                  <input type="checkbox" name="9"> Pain <br>
+                  <input type="checkbox" name="10"> Shortness of breath <br>
+                  <input type="checkbox" name="11"> Unresponsiveness <br>
+                  <input type="checkbox" name="12"> Vomiting <br>
+                  </h5>
+                </div>
+              </center>
+                 <!-- <input type="submit" value="Submit"> -->
+                 
+                <!--
+                <center>
+                  <input type="text" class="form-control mb-2" placeholder="City" required>
+                </center>
+                -->               
+               
+     
+                <center>
+                
+                 
+                <button class="btn btn-lg btn-primary btn-block mb-1 buttn" type="submit">Submit</button>
+              </center>
+              </form>
+</body>
+</html>
